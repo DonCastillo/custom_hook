@@ -14,13 +14,13 @@ const DataCard = ({ index, benefits, best_time_to_intake, image, importance, nam
 }
 
 const FetchData = () => {
-    // const [data] = UseFetch("https://api.npoint.io/9045c260b1565daa9e15")
-    const data = fruitData;
+    const [data] = UseFetch("https://api.npoint.io/9045c260b1565daa9e15")
+    // const data = fruitData;
     
     return (
         <>
             <ul className='list_data_main'>
-                <h1 className='usefetch_heading'>Use Fetch Custom Hook</h1>
+                <h1 className='usefetch_heading'>Fetching Food Data</h1>
                 {data && data.map((e, index) => <><DataCard index={index} {...e} /></>)}
             </ul>
         </>

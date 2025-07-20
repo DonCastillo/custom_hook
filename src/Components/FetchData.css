@@ -3,6 +3,7 @@
 .list_data_main {
     list-style: none;
     padding: 0;
+    width: 100%;
   }
   .usefetch_heading{
     text-align: center;
