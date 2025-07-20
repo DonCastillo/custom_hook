@@ -1,6 +1,7 @@
 import React from 'react'
 import UseFetch from './UseFetch'
 import "./FetchData.css"
+import fruitData from "./fruit.json"
 
 
 const DataCard = ({ index, benefits, best_time_to_intake, image, importance, name }) => {
@@ -13,8 +14,9 @@ const DataCard = ({ index, benefits, best_time_to_intake, image, importance, nam
 }
 
 const FetchData = () => {
-    const [data] = UseFetch("https://api.npoint.io/9045c260b1565daa9e15")
-    console.log("fetchData: ", data)
+    // const [data] = UseFetch("https://api.npoint.io/9045c260b1565daa9e15")
+    const data = fruitData;
+    
     return (
         <>
             <ul className='list_data_main'>
